@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About-rsses on glog</title>
+    <link>https://gradycongdon.github.io/about/index.xml</link>
+    <description>Recent content in About-rsses on glog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2016 21:26:57 -0500</lastBuildDate>
+    <atom:link href="https://gradycongdon.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>https://gradycongdon.github.io/about/</link>
+      <pubDate>Wed, 09 Nov 2016 21:26:57 -0500</pubDate>
+      
+      <guid>https://gradycongdon.github.io/about/</guid>
+      <description>&lt;p&gt;My name is grady
+this is my first hugo site&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
