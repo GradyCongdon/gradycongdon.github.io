@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glog</title>
+    <link>http://gradycongdon.github.io/index.xml</link>
+    <description>Recent content on glog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2016 19:01:04 -0500</lastBuildDate>
+    <atom:link href="http://gradycongdon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://gradycongdon.github.io/fixed/about/</link>
+      <pubDate>Wed, 09 Nov 2016 19:01:04 -0500</pubDate>
+      
+      <guid>http://gradycongdon.github.io/fixed/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post1</title>
+      <link>http://gradycongdon.github.io/posts/post1/</link>
+      <pubDate>Wed, 09 Nov 2016 19:00:37 -0500</pubDate>
+      
+      <guid>http://gradycongdon.github.io/posts/post1/</guid>
+      <description>&lt;p&gt;ok then&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
