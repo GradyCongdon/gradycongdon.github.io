@@ -1,0 +1,68 @@
+:root {
+  --shadow-color: rgba(150,150,150, .5);
+  --shadow-low: 2px 5px 8px var(--shadow-color);
+  --shadow-med: 2px 6px 10px var(--shadow-color);
+  --shadow-high: 2px 5px 13px var(--shadow-color);
+}
+
+.x-buttons {
+  height: 400px;
+  width: 400px;
+}
+.x-buttons .button {
+  margin: 1rem;
+}
+
+.button {
+  --background-color: lightgrey;
+  --border-color: transparent;
+  --text-color: white;
+
+  --font-size: 1.2rem;
+  --height: calc(var(--font-size) * 2.5);
+  --aspect: calc(16/9);
+
+  display: block;
+  font-size: var(--font-size);
+  height: var(--height);
+  line-height: var(--height);
+  min-width: calc(var(--height) * var(--aspect));
+  min-height: var(--font-size);
+  padding: 0 calc(var(--height) / 5);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  letter-spacing: .025rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button--blue {
+  --blue: #0fbdff;
+  --background-color: var(--blue);
+  --border-color: transparent;
+  --text-color: white;
+}
+
+
+.lifter {
+  box-shadow: var(--shadow-med);
+}
+
+.lifter:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-high);
+}
+.lifter:active {
+  transform: translateY(2px);
+  box-shadow: var(--shadow-low);
+}
+
+  
+
