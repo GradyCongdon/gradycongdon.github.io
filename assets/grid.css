@@ -1,0 +1,54 @@
+:root {
+  --header-bg: red;
+  --header-height: 40px;
+
+  --sidebar-bg: blue;
+  --sidebar-width: 200px;
+
+  --main-bg: white;
+}
+.full {
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+.grid--center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) auto;
+  grid-template-rows: var(--header-height) auto;
+  grid-template-areas: 
+    "header header"
+    "sidebar main";
+}
+
+.sidebar {
+  --primary: var(--sidebar-bg);;
+  grid-area: sidebar;
+  background-color: var(--sidebar-bg);
+}
+.main {
+  --primary: black;
+  grid-area: main;
+  background-color: var(--main-bg);
+  padding: 1rem;
+}
+.header {
+  --primary: var(--header-bg);;
+  grid-area: header;
+  background-color: var(--header-bg);
+  justify-content: center;
+}
+
+.outline {
+  border: 1px solid var(--primary); 
+  background-color: white;
+}
