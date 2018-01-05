@@ -52,3 +52,31 @@
   border: 1px solid var(--primary); 
   background-color: white;
 }
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 
+    "profile__image profile__username"
+    "profile__image profile__description";
+  grid-gap: 0 1rem;
+}
+.profile__image {
+  background-color: green;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid darkgreen;
+  border-radius: 100%;
+  min-width: 100px;
+}
+.profile__image {
+  grid-area: profile__image;
+}
+.profile__username {
+  grid-area: profile__username;
+}
+.profile__description {
+  grid-area: profile__description;
+}
