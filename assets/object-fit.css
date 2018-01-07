@@ -1,0 +1,32 @@
+.cinema {
+  --scale: 1;
+  width: calc(160px * var(--scale));
+  height: calc(90px * var(--scale));
+}
+.square {
+  --scale: 1;
+  width: calc(100px * var(--scale));
+  height: calc(100px * var(--scale));
+}
+
+.medium {
+  --scale: 3;
+}
+.large {
+  --scale: 5;
+}
+.pic {
+  background-image: url("/images/pic.jpg");
+}
+.bg-contain {
+  background-size: contain;
+}
+.cover {
+  object-fit: cover;
+}
+.contain {
+  object-fit: contain;
+}
+.fill {
+  object-fit: fill;
+}

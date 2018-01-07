@@ -1,0 +1,48 @@
+.parent {
+  position: relative;
+}
+
+.zr1 {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 600px;
+  background-color: rgba(255,0,0,0.2);
+}
+.zr2 {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(0,255,0,0.2);
+}
+.zp1 {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 200px;
+  width: 400px;
+  height: 600px;
+  background-color: rgba(0,0,255,0.2);
+}
+.zp2 {
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  height: 600px;
+  background-color: rgba(255,0,255,0.2);
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.green {
+  color: white;
+  background-color: green;
+}
