@@ -163,6 +163,7 @@
   letter-spacing: -20px;
   z-index: 1;
   transition: transform .3s var(--easeOutQuart);
+  pointer-events: none;
 }
 
 
