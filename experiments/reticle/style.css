@@ -1,0 +1,32 @@
+:root {
+  --ca: #52de97;
+  --cb: #c0ffb3;
+}
+.box {
+  background-color: var(--ca);
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  transition: background-color .5s ease-in;
+}
+
+.inside .box {
+  background-color: var(--cb);
+}
+
+.reticle {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 1px dashed black;
+  width: 35px;
+  height: 35px;
+}
+
+.inside {
+  background-color: var(--ca);
+}
+
+body {
+  transition: background-color .5s ease-in;
+}
