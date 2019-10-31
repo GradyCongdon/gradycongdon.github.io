@@ -4,3 +4,27 @@
 @import url("/assets/stacking.css");
 @import url("/assets/object-fit.css");
 @import url("/assets/buttons.css");
+
+.v {
+  height: 90vh;
+  padding: 1vh;
+  margin:  0 auto;
+}
+
+.h {
+  width: 90vw;
+  padding: 1vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .v {
+    height: 90vh;
+    padding: 2vh;
+  }
+  .h {
+    width: 45vw;
+    padding: 2vh;
+  }
+}
+
+
