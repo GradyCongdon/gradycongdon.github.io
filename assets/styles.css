@@ -5,26 +5,26 @@
 @import url("/assets/object-fit.css");
 @import url("/assets/buttons.css");
 
-.v {
-  height: 90vh;
-  padding: 1vh;
-  margin:  0 auto;
+
+
+.photos {
+  display: grid;
+  grid-template: repeat(9, 100vh) / repeat(2, 40vw);
+  grid-gap: 40px;
+  margin: 100px 50px;
+  margin-top: -5vh;
 }
 
-.h {
-  width: 90vw;
-  padding: 1vh;
+.photos img {
+  width: 100%;
+  object-fit: cover;
+  align-self: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .v {
-    height: 90vh;
-    padding: 2vh;
+@media (max-width: 425px) {
+  .photos {
+    grid-template: repeat(18, 100vh) / repeat(1, 90vw);
+    margin: 0 auto;
   }
-  .h {
-    width: 45vw;
-    padding: 2vh;
-  }
 }
-
 
