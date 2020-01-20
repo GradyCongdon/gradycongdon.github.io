@@ -10,7 +10,7 @@
 .photos {
   display: grid;
   grid-template: repeat(9, 100vh) / repeat(2, 40vw);
-  grid-gap: 40px;
+  grid-gap: 80px;
   margin: 100px 50px;
   margin-top: -5vh;
 }
@@ -20,6 +20,12 @@
   object-fit: cover;
   align-self: center;
 }
+
+.h {
+  height: auto;
+  width: 100%;
+}
+
 
 @media (max-width: 425px) {
   .photos {
