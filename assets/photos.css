@@ -1,0 +1,34 @@
+@import url("/assets/reset.css");
+@import url("/assets/default.css");
+@import url("/assets/styles.css");
+
+body {
+  background-color: rgb(240,240,240);
+}
+
+.photos {
+  display: grid;
+  grid-template: repeat(9, 100vh) / repeat(2, 40vw);
+  grid-gap: 10vh;
+  margin: 100px 50px;
+  margin-top: -2vh;
+}
+
+.photos img {
+  height: 85%;
+  object-fit: cover;
+  align-self: center;
+}
+
+.photos .h {
+  height: auto;
+  width: 100%;
+}
+
+
+@media (max-width: 425px) {
+  .photos {
+    grid-template: repeat(18, 100vh) / repeat(1, 90vw);
+    margin: 0 auto;
+  }
+}

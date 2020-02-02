@@ -1,9 +1,5 @@
 @import url("/assets/reset.css");
 @import url("/assets/default.css");
-@import url("/assets/grid.css");
-@import url("/assets/stacking.css");
-@import url("/assets/object-fit.css");
-@import url("/assets/buttons.css");
 
 :root {
   --blue: rgb(64, 81, 207);
@@ -18,8 +14,9 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 21px;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
   color: var(--black);
@@ -33,13 +30,15 @@ body {
   text-align: center;
   background-color: var(--offwhite);
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .index {
-  padding-top: 16vh;
+  margin-top: -6vh;
   -webkit-animation: fadein .6s;
   animation: fadein .6s;
-
 }
 
 @keyframes fadein {
@@ -53,7 +52,6 @@ body {
 }
 
 
-
 a {
   color: var(--blue); 
 }
@@ -63,13 +61,13 @@ a:hover {
 }
 
 .me {
-  font-size: 1.8rem;
+  font-size: 2.05rem;
   margin-bottom: 1rem;
 }
 
 .link--photos {
   font-size: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 0.9rem;
   margin-bottom: 1rem;
 }
 
@@ -107,31 +105,12 @@ a:hover {
 }
 
 
-
-.photos {
-  display: grid;
-  grid-template: repeat(9, 100vh) / repeat(2, 40vw);
-  grid-gap: 10vh;
-  margin: 100px 50px;
-  margin-top: -2vh;
-}
-
-.photos img {
-  height: 85%;
-  object-fit: cover;
-  align-self: center;
-}
-
-.photos .h {
-  height: auto;
-  width: 100%;
-}
-
-
-@media (max-width: 425px) {
-  .photos {
-    grid-template: repeat(18, 100vh) / repeat(1, 90vw);
-    margin: 0 auto;
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .index {
+    padding-top: 16vh;
   }
 }
 
