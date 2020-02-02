@@ -9,6 +9,7 @@
   --brown: rgb(226, 203, 175);
   --red: rgb(206, 91, 88);
   --black: rgb(0,0,0);
+  --dark-text: rgb(60,60,60);
   --light-text: rgb(75, 75,75);
   --offwhite: #fdfcfc:
 }
@@ -33,10 +34,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--dark-text);
 }
 
 .index {
-  margin-top: -6vh;
+  margin-top: -3vh;
   -webkit-animation: fadein .6s;
   animation: fadein .6s;
 }
@@ -103,6 +105,17 @@ a:hover {
   font-size: .9rem;
   margin-left: 1px;
 }
+
+.onwards {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+}
+
+
 
 
 @media (min-width: 768px) {

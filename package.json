@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/gradycongdon/gradycongdon.github.io/issues"
   },
-  "homepage": "https://github.com/gradycongdon/gradycongdon.github.io#readme"
+  "homepage": "https://github.com/gradycongdon/gradycongdon.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  }
 }
