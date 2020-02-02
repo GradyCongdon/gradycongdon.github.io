@@ -1,10 +1,12 @@
 @import url("/assets/reset.css");
 @import url("/assets/default.css");
+@import url("/assets/styles.css");
 
 body {
   background-color: rgb(240,240,240);
   margin-left: 5px;
   margin-top: 5px;
+  margin-bottom: -25vh;
 }
 .photos {
   width: 100vw;

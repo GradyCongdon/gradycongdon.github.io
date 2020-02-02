@@ -34,14 +34,3 @@ pre {
 	font-family: monospace;
 }
 
-.content {
-  padding: 1rem;
-}
-
-.row {
-  display: flex;
-  justify-contnet: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
