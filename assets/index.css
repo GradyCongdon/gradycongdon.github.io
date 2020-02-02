@@ -34,7 +34,6 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: var(--dark-text);
   margin-bottom: var(--footer-height);
 }
@@ -126,6 +125,10 @@ a:hover {
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+  }
+  body {
+    justify-content: center;
+    margin-top: -10vh;
   }
   .index {
     padding-top: 16vh;
