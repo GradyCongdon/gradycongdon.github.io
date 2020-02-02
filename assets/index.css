@@ -2,7 +2,7 @@
 @import url("/assets/default.css");
 
 :root {
-  --blue: rgb(64, 81, 207);
+  --blue: rgb(67, 83, 206);
   --blue-alt: rgb(49, 64, 177);
   --blue-deep: #1e3983;
   --green: #31371b;
@@ -107,13 +107,17 @@ a:hover {
   margin-left: 1px;
 }
 
+.super--insta {
+  margin-left: -2px;
+}
+
 .onwards {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   position: fixed;
   height: var(--footer-height);
-  bottom: 0;
+  bottom: 15px;
 }
 
 
