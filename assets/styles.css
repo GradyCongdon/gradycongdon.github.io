@@ -38,7 +38,7 @@ body {
 }
 
 .index {
-  margin-top: -3vh;
+  margin-top: -10vh;
   -webkit-animation: fadein .6s;
   animation: fadein .6s;
 }
