@@ -52,3 +52,11 @@
     margin-top: -5vh;
   }
 }
+
+@media (min-width: 768px) {
+  .index {
+    justify-content: center;
+    margin-top: -2vh;
+  }
+}
+
