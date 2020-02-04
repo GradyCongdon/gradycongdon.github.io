@@ -38,9 +38,6 @@
   opacity: 0;
 }
 
-.super--insta {
-  margin-left: -2px;
-}
 
 
 @supports (-webkit-overflow-scrolling: touch) {
@@ -50,6 +47,9 @@
   }
   .up {
     margin-top: -5vh;
+  }
+  .super--insta {
+    margin-left: -2px;
   }
 }
 
