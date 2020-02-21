@@ -49,6 +49,15 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+article {
+  text-align: left;
+}
+
+
 .fadein {
   -webkit-animation: fadein .6s;
   animation: fadein .6s;
@@ -116,6 +125,11 @@ a:hover {
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+  }
+
+  .index {
+    justify-content: center;
+    margin-top: -2vh;
   }
 }
 

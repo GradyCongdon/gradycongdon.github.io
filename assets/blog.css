@@ -2,9 +2,18 @@
 @import url("/assets/default.css");
 @import url("/assets/styles.css");
 
+.entry {
+  margin-bottom: 1rem;
+}
+
 .link--blog {
   font-size: 1.1rem;
 }
+
+.entry .link--blog {
+  margin-bottom: -0.25rem;
+}
+
 .blog_date {
   font-size: 0.8rem;
   color: var(--grey);

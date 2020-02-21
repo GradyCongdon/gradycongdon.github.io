@@ -2,6 +2,11 @@
 @import url("/assets/default.css");
 @import url("/assets/styles.css");
 
+.me {
+  margin-top: 0.5rem;
+  font-size: 2.05rem;
+  margin-bottom: 0.75rem;
+}
 
 .link--photos {
   font-size: 2rem;
@@ -41,7 +46,12 @@
 }
 
 
+
 @supports (-webkit-overflow-scrolling: touch) {
+  /* iOS */ 
+  .me {
+    margin-top: 1.5rem;
+  }
   .up {
     margin-top: -5vh;
   }
@@ -50,10 +60,4 @@
   }
 }
 
-@media (min-width: 768px) {
-  .index {
-    justify-content: center;
-    margin-top: -2vh;
-  }
-}
 
