@@ -1,0 +1,11 @@
+@import url("/assets/reset.css");
+@import url("/assets/default.css");
+@import url("/assets/styles.css");
+
+.link--blog {
+  font-size: 1.1rem;
+}
+.blog_date {
+  font-size: 0.8rem;
+  color: var(--grey);
+}

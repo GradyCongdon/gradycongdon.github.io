@@ -2,20 +2,22 @@
 @import url("/assets/default.css");
 @import url("/assets/styles.css");
 
-.index {
-  -webkit-animation: fadein .6s;
-  animation: fadein .6s;
-}
-.me {
-  margin-top: 0.5rem;
-  font-size: 2.05rem;
-  margin-bottom: 0.75rem;
-}
 
 .link--photos {
   font-size: 2rem;
   margin-top: 0.9rem;
   margin-bottom: 1rem;
+  jusitfy-content: center;
+  align-items: center;
+}
+
+.link--photos .onwards {
+  position: relative;
+  top: 3px;
+}
+
+.link--photos .onwards:hover {
+  text-decoration: none;
 }
 
 .link--code {
@@ -39,12 +41,7 @@
 }
 
 
-
 @supports (-webkit-overflow-scrolling: touch) {
-  /* iOS */ 
-  .me {
-    margin-top: 1.5rem;
-  }
   .up {
     margin-top: -5vh;
   }
