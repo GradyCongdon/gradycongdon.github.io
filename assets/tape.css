@@ -1,0 +1,65 @@
+@import url("/assets/reset.css");
+@import url("/assets/default.css");
+@import url("/assets/styles.css");
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 20px;
+  justify-items: flex-start;
+}
+
+.span {
+  grid-column: span 2
+  color: #333;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.side {
+  margin-left: 0.5rem;
+  max-width: 500px;
+}
+
+li a {
+  font-size: .8rem;
+}
+li a:hover {
+  text-decoration: none;
+}
+
+
+.side li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid 1px #e7e7e7;
+  line-height: 1;
+  min-height: 1.5rem;
+  margin-bottom: .25rem;
+}
+
+.side span {
+  display: inline-block;
+}
+
+.artist {
+  margin-right: .3rem;
+}
+
+.song {
+  margin-left: .3em;
+  text-align: right;
+}
+
+.side li:hover {
+  border-bottom-color: var(--blue);
+}
+
+

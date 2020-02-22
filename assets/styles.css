@@ -22,7 +22,7 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: var(--black);
+  color: var(--dark-text);
   font-family: 'DM Serif Text', serif;
   font-weight: normal;
   line-height: 1.2;
@@ -30,12 +30,10 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
   font-size: 1.5rem;
-  text-align: center;
   background-color: var(--offwhite);
   min-height: 100vh;
   min-height: -webkit-fill-available;
   display: flex;
-  align-items: center;
   color: var(--dark-text);
   margin-top: calc(0 - var(--footer-height) - var(--footer-bottom));
   margin-bottom: calc(var(--footer-height) + var(--footer-bottom));
@@ -97,6 +95,8 @@ article {
   position: fixed;
   height: var(--footer-height);
   bottom: var(--footer-bottom);
+  width: 100%;
+  justify-content: center;
 }
 
 
@@ -110,6 +110,10 @@ article {
 
 .hidden {
   visibility: hidden;
+}
+
+.index {
+  text-align: center;
 }
 
 @keyframes fadein {
