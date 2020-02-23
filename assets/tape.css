@@ -71,7 +71,7 @@ li a:hover {
   main {
     display: grid;
     grid-template-columns: [label-a] 30px [side-a] 1fr [center] 60px [label-b] 30px [side-b] 1fr [label-c] 30px;
-    grid-template-rows: [title-up] 35vh [title-down] 25vh [tracks] 1fr [pics-b] 1fr 100px;
+    grid-template-rows: [title-up] 35vh [title-down] .75fr [tracks] 1fr [pics-b] 1fr 100px;
     grid-column-gap: 0;
     justify-items: flex-start;
     align-items: flex-start;
