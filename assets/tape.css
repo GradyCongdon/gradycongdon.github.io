@@ -2,30 +2,35 @@
 @import url("/assets/default.css");
 @import url("/assets/styles.css");
 
-.grid { 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-column-gap: 20px;
-  justify-items: flex-start;
-}
-
-.span {
-  grid-column: span 2
-  color: #333;
-}
-
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  margin: 1rem auto;
+}
+
+h4 {
+  border-bottom: 1px solid #d6d6d6;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+
+img {
+  margin: 1rem auto;
+  border: 1px solid #bbb;
 }
 
 .side {
   margin-left: 0.5rem;
-  max-width: 500px;
+  margin-bottom: 1.25rem;
 }
+
 
 li a {
   font-size: .8rem;
@@ -40,7 +45,7 @@ li a:hover {
   justify-content: space-between;
   align-items: flex-end;
   border-bottom: solid 1px #e7e7e7;
-  line-height: 1;
+  line-height: 1.1;
   min-height: 1.5rem;
   margin-bottom: .25rem;
 }
@@ -61,5 +66,97 @@ li a:hover {
 .side li:hover {
   border-bottom-color: var(--blue);
 }
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: [label-a] 30px [side-a] 1fr [center] 60px [label-b] 30px [side-b] 1fr [label-c] 30px;
+    grid-template-rows: [title-up] 35vh [title-down] 25vh [tracks] 1fr [pics-b] 1fr 100px;
+    grid-column-gap: 0;
+    justify-items: flex-start;
+    align-items: flex-start;
+    padding: 0 10vw;
+    margin-top: 5rem;
+  }
+
+  h3 {
+    font-size: 10rem;
+    margin: 0;
+    line-height: 0.9;
+  }
+
+
+  h4 {
+    border-bottom-color: transparent;
+    margin: 0;
+    font-size: 2rem;
+    color: var(--subtle-light-text);
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  .side {
+    width: 100%;
+    margin: 0;
+  }
+
+  .label {
+    justify-self: center;
+    position: relative;
+    line-height: 1.1;
+  }
+
+  .title {
+    grid-column: side-a / side-b;
+    grid-row: title-up / title-down;
+    z-index: 3;
+    text-shadow: 3px 4px 1px white;
+    margin-top: 1rem;
+    margin-left: -1rem;
+  }
+
+  .cover {
+    grid-column: side-b;
+    grid-row: title-up;
+    align-self: flex-start;
+    margin-top: 3rem;
+  }
+
+  .label--a {
+    grid-column: label-a;
+    grid-row: tracks;
+  }
+
+  .side--a {
+    grid-column: side-a;
+    grid-row: tracks;
+  }
+
+  .label--b {
+    grid-column: label-b;
+    grid-row: tracks;
+  }
+
+  .side--b {
+    grid-column: side-b;
+    grid-row: tracks;
+  }
+
+  .spine {
+    grid-column: side-a;
+    grid-row: pics-b;
+  }
+  .back {
+    grid-column: side-b;
+    grid-row: pics-b;
+  }
+
+}
+
 
 

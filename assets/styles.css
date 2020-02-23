@@ -10,8 +10,9 @@
   --brown: rgb(226, 203, 175);
   --red: rgb(206, 91, 88);
   --black: rgb(0,0,0);
-  --dark-text: rgb(60,60,60);
-  --light-text: rgb(75, 75,75);
+  --dark-text: rgb(60,60,65);
+  --light-text: rgb(75, 75, 80);
+  --subtle-light-text: rgb(150,150,155);
   --offwhite: #fdfcfc:
   --footer-height: 45px;
   --footer-bottom: 15px;
@@ -21,12 +22,6 @@ html {
   font-size: 21px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: var(--dark-text);
-  font-family: 'DM Serif Text', serif;
-  font-weight: normal;
-  line-height: 1.2;
-}
 
 body {
   font-size: 1.5rem;
@@ -38,6 +33,26 @@ body {
   margin-top: calc(0 - var(--footer-height) - var(--footer-bottom));
   margin-bottom: calc(var(--footer-height) + var(--footer-bottom));
 }
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--dark-text);
+  font-family: 'DM Serif Text', serif;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0.5rem;
+  font-size: 2.05rem;
+  margin-bottom: 0.75rem;
+}
+
+img {
+  width: 95%; 
+  height: auto; 
+  max-width: 600px;
+}
+
 
 a {
   color: var(--blue); 
@@ -55,10 +70,47 @@ article {
   text-align: left;
 }
 
+.index {
+  text-align: center;
+}
 
 .fadein {
   -webkit-animation: fadein .6s;
   animation: fadein .6s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .index {
+    justify-content: center;
+    margin-top: -2vh;
+  }
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  /* iOS */ 
+  h1 {
+    margin-top: 1.5rem;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* iOS */ 
+  .onwards {
+    font-size: 3.75rem;
+  }
 }
 
 .content {
@@ -112,47 +164,3 @@ article {
   visibility: hidden;
 }
 
-.index {
-  text-align: center;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-
-  .index {
-    justify-content: center;
-    margin-top: -2vh;
-  }
-}
-
-h1 {
-  margin-top: 0.5rem;
-  font-size: 2.05rem;
-  margin-bottom: 0.75rem;
-}
-
-@supports (-webkit-overflow-scrolling: touch) {
-  /* iOS */ 
-  h1 {
-    margin-top: 1.5rem;
-  }
-}
-
-@supports (-webkit-overflow-scrolling: touch) {
-  /* iOS */ 
-  .onwards {
-    font-size: 3.75rem;
-  }
-}
