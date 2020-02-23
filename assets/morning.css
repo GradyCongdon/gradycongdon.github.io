@@ -1,0 +1,100 @@
+@import url('/assets/reset.css');
+@import url('/assets/default.css');
+@import url('/assets/styles.css');
+
+:root {
+  --blue: rgb(203, 226, 236);
+  --black: rgb(56, 59, 62);
+}
+
+body {
+  background: url(/images/morning-noise.png);
+  color: var(--black);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+  padding-bottom: 4rem;
+  max-width: 666px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Cardo', serif;
+  font-size: 3.3rem;
+  color: var(--blue);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+  height: 4rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+h1 .underline {
+  display: inline-block;
+  height: 3.33rem;
+  border-bottom: 3px solid var(--black);
+  position: relative;
+  top: -10px;
+}
+
+h1 .underline-none {
+  border-bottom: 3px solid transparent;
+  position: relative;
+  top: -10px;
+}
+
+a {
+  color: var(--black);
+}
+
+img {
+ height: 55vh;
+ width: auto;
+ margin-right: auto;
+}
+
+li {
+  font-size: 1.1rem;
+  padding-bottom: .75rem;
+}
+
+.label {
+  font-size: 2rem;
+  margin: 1.5rem auto .25rem;
+  border-bottom: 1px solid var(--black);
+  width: 100%;
+  text-align: center;
+
+}
+ li span {
+   display: block;
+ }
+
+ .artist {
+  font-size: 0.9rem;
+}
+
+ .song {
+  font-size: 1.1rem;
+}
+
+
+
+/*
+section {
+  background: url(/images/morning-noise-black.png);
+  color: var(--blue);
+  padding: 1rem;
+}
+section a {
+  color: var(--blue);
+}
+*/
+
+
+

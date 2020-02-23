@@ -141,6 +141,7 @@ article {
   display: inline-flex;
   align-items: center;
   font-size: 2.5rem;
+  text-shadow: 2px 2px 1px white;
 }
 
 .onwards.fixed {
@@ -154,6 +155,7 @@ article {
 
 .back-around {
   margin-bottom: -.2rem;
+  text-shadow: -2px -2px 1px white;
 }
 
 .cv {
