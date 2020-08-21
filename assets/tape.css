@@ -30,6 +30,9 @@ h4 {
 img {
   margin: 1rem auto;
   border: 1px solid #bbb;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .side {
@@ -114,7 +117,6 @@ li a:hover {
 
   img {
     margin: 0;
-    width: 100%;
     justify-self: flex-start;
     align-self: center;
   }
