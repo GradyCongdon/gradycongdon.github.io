@@ -2,23 +2,30 @@
 @import url("/assets/default.css");
 @import url("/assets/styles.css");
 
+html {
+  width: 100vw;
+}
+
 body {
   background-color: rgb(240,240,240);
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: -25vh;
+  width: 100vw;
 }
 .photos {
-  width: 100vw;
-  display: grid;
-  grid-template: repeat(9, 100vh) / repeat(2,48vw);
-  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10vh auto;
   justify-content: center;
+  align-items: center;
+
 }
 
 .photos img {
-  width: 40vw;
-  height: auto;
+  height: 75vh;;
+  width: auto;
   object-fit: cover;
   justify-self: center;
   margin-bottom: 1vh;
