@@ -5,9 +5,18 @@
 :root {
   --blue: rgb(203, 226, 236);
   --black: rgb(56, 59, 62);
+  --title-size: 4rem;
+  --underline-size: calc(var(--title-size) * .85);
 }
 
-body {
+@media (max-width: 375px) {
+  :root {
+    --title-size: 3.45rem;
+  }
+}
+
+html {
+  background-color: var(--blue);
   background: url(/images/morning-noise.png);
   color: var(--black);
 }
@@ -18,73 +27,108 @@ main {
   justify-content: flex-start;
   padding: 1.5rem 1rem;
   padding-bottom: 4rem;
+  width: 100%;
   max-width: 666px;
   margin: 0 auto;
 }
 
 h1 {
   font-family: 'Cardo', serif;
-  font-size: 3.3rem;
+  font-size: var(--title-size);
+  height: var(--title-size);
   color: var(--blue);
   padding-bottom: 0;
-  margin-bottom: 0;
   display: block;
-  height: 4rem;
   color: var(--black);
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.75rem;
 }
+
 
 h1 .underline {
   display: inline-block;
-  height: 3.33rem;
+  height: var(--title-size);
   border-bottom: 3px solid var(--black);
   position: relative;
-  top: -10px;
 }
 
 h1 .underline-none {
   border-bottom: 3px solid transparent;
   position: relative;
-  top: -10px;
 }
 
 a {
   color: var(--black);
 }
 
-img {
+.cover {
  height: 55vh;
  width: auto;
  margin-right: auto;
+ margin-bottom: 1.5rem;
 }
+
+
 
 li {
   font-size: 1.1rem;
-  padding-bottom: .75rem;
+  margin-bottom: .8rem;
 }
 
 .label {
   font-size: 2rem;
-  margin: 1.5rem auto .25rem;
+  margin: 0.25rem auto 0.6rem;
   border-bottom: 1px solid var(--black);
   width: 100%;
   text-align: center;
-
 }
- li span {
-   display: block;
- }
+
+li a {
+  display: grid;
+  grid-template-columns: [artist] 9fr [year] 1fr;
+  grid-template-rows: [artist] 1fr [song] 1fr;
+}
+
 
  .artist {
   font-size: 0.9rem;
+  font-style: italic;
+  grid-column: artist;
+  grid-row: artist;
+
 }
 
  .song {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
+  grid-column: artist;
+  grid-row: song;
+}
+
+.year {
+  float: right;
+  grid-column: year;
+  grid-row: artist / span 2;
+  align-self: center;
+  font-size: .75rem;
+  color: var(--light-text);
 }
 
 
 
+@media (min-width: 425px) {
+  .cover {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* TODO way too many redefined in imports */
+@media (min-width: 768px) {
+  html {
+    font-size: 21px;
+  }
+}
 /*
 section {
   background: url(/images/morning-noise-black.png);

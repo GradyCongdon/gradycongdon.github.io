@@ -14,7 +14,9 @@ h3 {
   margin: 1rem auto;
   font-size: 3rem;
   padding: 1rem;
-  border: solid 1px #cdcdd4;
+  border-top: solid 1px #f0f0fb;
+  border-bottom: solid 1px #f0f0fb;
+  line-height: 0.95;
   text-align: center;
 }
 
@@ -75,6 +77,8 @@ li a:hover {
   border-bottom-color: var(--blue);
 }
 
+
+
 @media (min-width: 768px) {
   main {
     display: grid;
@@ -88,7 +92,7 @@ li a:hover {
   }
 
   h3 {
-    font-size: 10rem;
+    font-size: 8rem;
     margin: 0;
     line-height: 0.9;
     padding: 0;
@@ -182,8 +186,12 @@ li a:hover {
     grid-column: side-b;
     grid-row: pics-b;
   }
-
 }
 
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 10rem;
+  }
+}
 
 
