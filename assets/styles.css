@@ -1,6 +1,5 @@
 @import url("/assets/reset.css");
 @import url("/assets/default.css");
-@import url("/assets/styles.css");
 
 :root {
   --blue: rgb(67, 83, 206);
@@ -143,6 +142,7 @@ article {
   bottom: var(--footer-bottom);
   width: 100%;
   justify-content: center;
+  z-index: 10;
 }
 
 

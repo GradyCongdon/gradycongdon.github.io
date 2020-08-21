@@ -3,7 +3,7 @@
 @import url("/assets/styles.css");
 
 html {
-  width: 100vw;
+  width: 98vw;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: -25vh;
-  width: 100vw;
+  width: 98vw;
 }
 .photos {
   display: flex;
@@ -22,31 +22,26 @@ body {
   align-items: center;
 
 }
+  a {
+    color: white;
+  }
+  .onwards {
+    text-shadow: none;
+  }
+
 
 .photos img {
-  height: 75vh;;
-  width: auto;
+  width: 90vw;
+  height: auto;
   object-fit: cover;
   justify-self: center;
   margin-bottom: 1vh;
 }
 
-
-.horiz {
-  grid-column: span 2;
-  justify-self: center;
-}
-
-.horiz img {
-  width: 65vw;
-  height: auto;
-}
-
-.horiz img:nth-child(even) {
-  margin-left: 10vw;
-}
-
 @media (min-width: 980px) {
+  body {
+    margin-top: -75px;
+  }
   .photos {
     display: grid;
     grid-template: repeat(9, 115vh) / repeat(2,48vw);
@@ -54,26 +49,20 @@ body {
     margin-top: 5vh;
   }
 
-  .horiz {
-    grid-column: span 2;
-    width: 75vw;
-    justify-self: center;
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .horiz img {
-    width: 90vw;
-    height: auto;
-  }
-
-  .horiz img {
+  .photos img {
     width: auto;
-    height: 47vh;
-    float: right;
-    margin-bottom: 3vh;
+    height: 75vh;
   }
-  .horiz img:nth-child(2) {
-    float: left;
+
+  .h {
+    grid-column: span 2;
   }
+
+  a {
+    color: var(--blue);
+  }
+  .onwards {
+    text-shadow: 2px 2px 1px white;
+  }
+
 }
