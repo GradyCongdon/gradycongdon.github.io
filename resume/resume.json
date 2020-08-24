@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "name": "Grady Congdon",
+    "label": "Software Engineer",
+    "picture": "",
+    "website": "https://gradycongdon.github.io",
+    "summary": "",
+    "profiles": [
+      {
+        "network": "github",
+        "username": "GradyCongdon",
+        "url": "https://github.com/GradyCongdon"
+      },
+      {
+        "network": "instagram",
+        "username": "gggrrraaadddyyy",
+        "url": "https://instagram.com/gggrrraaadddyyy"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Rocket Auto",
+      "position": "Software Engineer",
+      "website": "https://www.rocketuto.com",
+      "startDate": "2020",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Rock Connections",
+      "position": "Software Engineer",
+      "website": "http://www.rockconnections.com",
+      "startDate": "2017",
+      "endDate": "2020",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "HIPR Inc",
+      "position": "Programmer  / IT Specialist",
+      "website": "http://www.hipr.com",
+      "startDate": "2013",
+      "endDate": "2017",
+      "summary": "Lead IT member for Ann Arbor, Chicago, Pittsburgh & Houston offices. Lead programmer on several projects based on JavaScript, python & php",
+      "highlights": [
+        "Created Form I-9 Work Authorization Form submission app. Used by HR to validate & submit the required government documentation for when onboarding new hires. Based on JavaScript (ES6), Meteor, mongodb, & nginx",
+        "Developed web app which allowed employees to upload pdfs or images for OCR (Optical Character Recognition) image processing. Uploaded images were 'scanned' for text characters, and the resulting text output is overlaid on a pdf. Based on JavaScript, tesseract, opencv, & php",
+        "Wrote web app for automating the collection of academic journals and paper citation rankings. Users input the url of a Google Scholar profile, and the app scrapes the webpage. A list of papers is used to query the database, and journal rankings are calculated from Google Scholar, Reuters, and Scimago. Based on JavaScript, angular & python"
+      ]
+    },
+    {
+      "company": "Skiniotis Lab (University of Michigan Life Sciences)",
+      "position": "Lab Assistant",
+      "website": "http://www.lsi.umich.edu/labs/georgios-skiniotis-lab",
+      "startDate": "2012",
+      "endDate": "2013",
+      "summary": "Captured images of proteins on Tunneling Electron Microscope (TEM) to reconstruct 3D models using computing cluster. Image processed 20,000+ pictures for particle selection.",
+      "highlights": [
+        "Assisted on 'Structure of a modular polyketide synthase' which was later published in Nature, the world's highest-rated academic journal."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "area": "Biology",
+      "studyType": "Bachelor",
+      "startDate": "2007",
+      "endDate": "2012",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Michigan Biological Station",
+      "area": "Behavioral Ecology / Botany",
+      "studyType": "Summer Program",
+      "startDate": "2011",
+      "endDate": "2011",
+      "gpa": "",
+      "courses": [
+        "My team's research project 'Evidence for a behavioral syndrome in antlion larvae (Myermeleon immaculatus)' was selected as one of the summer's top projects for the student symposium. "
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "name": "Structure of a modular polyketide synthase",
+      "publisher": "Nature",
+      "releaseDate": "2013",
+      "website": "https://www.nature.com/nature/journal/v510/n7506/full/nature13423.html",
+      "summary": "Georgios Skiniotis and colleagues use cryo-electron microscopy to probe the structure of an intact module of a full-length multienzyme PKS module involved in pikromycin biosynthesis in the bacterium Streptomyces venezuelae in different functional states. The structures reveal how the ketosynthase, acyltransferase, ketoreductase and acyl carrier protein (ACP) domains interact during the catalytic cycle."
+    },
+    {
+      "name": "Electronic Form Autofill Extension Plugin Subsystem Integrated with Web Browser, Cloud-Based Communication Platform and USCIS or USPTO E-Filing System ",
+      "publisher": "US Patent Office",
+      "releaseDate": "2015",
+      "website": "",
+      "summary": "Created browser extension to autofill & authenticate I-140 immigration documents from company CMS to USCIS's governemt website. Drafted the original patent proposal & submission. Inventorship transfered to Bing Yu Hsieh."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Engineering",
+      "level": "",
+      "keywords": [
+        "JavaScript / TypeScript",
+        "React",
+        "Apex",
+        "HTML / CSS",
+        "AWS"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": []
+}

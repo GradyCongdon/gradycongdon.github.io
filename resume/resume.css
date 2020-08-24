@@ -1,0 +1,37 @@
+:root {
+  --footer-height: 45px;
+  --footer-bottom: 15px;
+}
+
+.onwards {
+  display: inline-flex;
+  align-items: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 1px white;
+  transition: none;
+  box-shadow: none;
+  border-bottom: none;
+  outline: none;
+  color: black;
+}
+
+.onwards:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 430px) {
+  .contact {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+}
+
+.onwards.fixed {
+  position: fixed;
+  height: var(--footer-height);
+  bottom: var(--footer-bottom);
+  left: 0;
+  right: 0;
+  justify-content: center;
+  z-index: 10;
+}

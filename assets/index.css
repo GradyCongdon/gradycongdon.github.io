@@ -10,8 +10,9 @@
   font-size: 2rem;
   margin-top: 0.9rem;
   margin-bottom: 1rem;
-  jusitfy-content: center;
+  justify-content: center;
   align-items: center;
+  max-height: 65px;
 }
 
 .link--photos .onwards {
@@ -68,5 +69,3 @@
     margin-bottom: .5rem;
   }
 }
-
-

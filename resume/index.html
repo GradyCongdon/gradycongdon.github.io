@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>Grady Congdon</title>
+        <link rel="stylesheet" href="./resume.css">
+        <style>
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            embed,
+            figure,
+            figcaption,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            output,
+            ruby,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              font-size: 100%;
+              font: inherit;
+              vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+              display: block;
+            }
+            body {
+              line-height: 1.5;
+            }
+            ol,
+            ul {
+              list-style: none;
+            }
+            blockquote,
+            q {
+              quotes: none;
+            }
+            blockquote:before,
+            blockquote:after,
+            q:before,
+            q:after {
+              content: '';
+              content: none;
+            }
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+            }
+            @import url(http://fonts.googleapis.com/css?family=Roboto);
+            html,
+            button,
+            input,
+            textarea {
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              font-family: 'Roboto', sans-serif;
+            }
+            
+            :root {
+              --text: #333333;
+              --headline: #b9bcbf;
+              --sub-headline: #96999b;
+              --primary: rgb(207, 214, 255);
+              --secondary: rgb(238, 245, 255);
+            }
+            
+            
+            body {
+              margin: 0 auto;
+              padding: 4rem 2rem;
+              max-width: 600px;
+              color: var(--text);
+            }
+            
+            h1 {
+              font-size: 26px;
+              font-weight: 600;
+              margin-bottom: 1.5rem;
+            }
+            
+            h2 {
+              margin-top: 2rem;
+              font-size: 12px;
+              font-weight: 600;
+              color: var(--headline);
+              letter-spacing: 1.2px;
+              font-style: italic;
+            }
+            
+            h3 {
+              display: block;
+              font-weight: 600;
+              font-size: 16px;
+              letter-spacing: 1.2px;
+              margin-top: 0.5rem;
+            }
+            
+            h4 {
+              font-size: 14px;
+              color: var(--sub-headline);
+              padding-top: 0.5rem;
+              padding-bottom: 0.25rem;
+            }
+            
+            p,
+            li {
+              margin-bottom: 0.25rem;
+              font-size: 14px;
+            }
+            
+            a {
+              transition: box-shadow 160ms ease 0s;
+              box-shadow: var(--secondary) 0px -9px 0px inset;
+              border-bottom: 2px solid var(--primary);
+              text-decoration: none;
+              color: var(--text);
+            }
+            
+            a:hover {
+              box-shadow: var(--primary) 0px -1.2em 0px inset;
+            }
+            
+            section ul {
+              margin-top: 0.5rem;
+              margin-left: 2.5rem;
+              list-style: disc;
+            }
+            
+            .contact {
+            }
+            
+            .contact span {
+              width: 100px;
+              display: inline-block;
+            }
+            
+            .skills ul {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 2rem;
+            }
+            
+            .skills li {
+              margin-bottom: 1rem;
+              margin-right: 0.5rem;
+              padding: 0.25rem 1rem;
+              background-color: var(--secondary);
+              white-space: nowrap;
+            }
+            
+            .position {
+              margin-bottom: 1.5rem;
+            }
+            
+            .grey {
+              color: var(--sub-headline);
+            }
+            
+            .header {
+              display: flex;
+              justify-content: space-between;
+            }
+            
+            .pdf {
+              color: var(--headline);
+              transition: color ease 160ms;
+              border: none;
+              box-shadow: none;
+            }
+            
+            .pdf:hover {
+              box-shadow: none;
+              color: var(--sub-headline);
+            }
+            
+            @media print {
+              body {
+                padding: 0rem;
+              }
+            
+              section,
+              div {
+                page-break-inside: avoid;
+              }
+            
+              .pdf {
+                display: none;
+              }
+            }
+            
+            .fb {
+              display: flex;
+              justify-content: space-between;
+            }
+            
+            .small {
+              font-size: 12.5px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="resume">
+            <div class="header">
+                 <h1>Grady Congdon</h1>
+
+            </div>
+            <section class="contact fb">
+                <p>	<a href="https://gradycongdon.github.io" target="_blank" rel="noopener">gradycongdon.github.io</a>
+
+                </p>
+                <p>	<a href="mailto:gradycongdon@gmail.com" target="_blank" rel="noopener noreferrer">gradycongdon@gmail.com</a>
+
+                </p>
+            </section>
+            <div class="fb">
+                <p>Software Engineer</p>
+                <p>Ann Arbor, MI</p>
+            </div>
+            <p class="grey"></p>
+            <section class="position">
+                	<h2>Employment</h2>
+
+                	<h3>
+							<a target="_blank" rel="noopener" href="https://www.rocketuto.com">Rocket Auto</a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>
+						    Software Engineer
+						</h4>
+
+                    	<h4>
+						      2020
+						  
+						    - Present
+						</h4>
+
+                </div>
+                <div class="summary">
+                    <p>Developing an automotive CRM in Apex &amp; Javascript. Rocket Auto was
+                        spun out of Rock Connections to focus on the automotive space</p>
+                </div>
+                <ul class="highlights">
+                    <li>Built our website protoype in React &amp; the Spark design system</li>
+                    <li>Developed the lead ingestion API for our Salesforce instance</li>
+                </ul>
+            </section>
+            <section class="position">
+                	<h3>
+							<a target="_blank" rel="noopener" href="http://www.rockconnections.com">Rock Connections</a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>
+						    Software Engineer
+						</h4>
+
+                    	<h4>
+						      2017
+						  
+						    - 2020
+						</h4>
+
+                </div>
+                <div class="summary">
+                    <p>Joined as a front-end developer which has since expanded to a full-stack
+                        role. Completed several web projects using TypeScript, JS, React, Apex,
+                        php &amp; AWS</p>
+                </div>
+                <ul class="highlights">
+                    <li>Coded an email templating and marketing framework in Apex which extends
+                        Salesforce&#x27;s limited default system</li>
+                    <li>Created a call recording playback and visualization site &amp; transcoding
+                        backend that is used by several partners</li>
+                </ul>
+            </section>
+            <section class="position">
+                	<h3>
+							<a target="_blank" rel="noopener" href="http://www.hipr.com">HIPR</a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>
+						    Programmer  / IT Specialist
+						</h4>
+
+                    	<h4>
+						      2013
+						  
+						    - 2017
+						</h4>
+
+                </div>
+                <div class="summary">
+                    <p>Lead programmer and IT member for Ann Arbor, Chicago, Pittsburgh &amp;
+                        Houston offices</p>
+                </div>
+                <ul class="highlights">
+                    <li>Created an I-9 Work Authorization Form submission app in the Meteor framework</li>
+                    <li>Developed OCR web app for document processing in php</li>
+                </ul>
+            </section>
+            <section class="position">
+                	<h3>
+							<a target="_blank" rel="noopener" href="https://web.archive.org/web/20140323115316/http://www.lsi.umich.edu/labs/georgios-skiniotis-lab">Skiniotis Lab - University of Michigan</a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>
+						    Lab Assistant
+						</h4>
+
+                    	<h4>
+						      2012
+						  
+						    - 2013
+						</h4>
+
+                </div>
+                <div class="summary">
+                    <p>Captured images of proteins on Tunneling Electron Microscope (TEM) to
+                        reconstruct 3D models using a computing cluster</p>
+                </div>
+            </section>
+            <section class="position">
+                	<h2>Education</h2>
+
+                	<h3>
+		        <a href="https://umich.edu" target="_blank" rel="noopener">University of Michigan</a>
+		      </h3>
+
+                <div class="fb">
+                     <h4>
+		          Biology
+		        </h4>
+
+                     <h4>
+		              2007
+		          
+		            - 2012
+		        </h4>
+
+                </div>
+            </section>
+            <section class="position">
+                	<h2>Publications</h2>
+
+                	<h3 class="publication">
+		            <a class="small" target="_blank" rel="noopener" href="https://uspto.gov">Electronic Form Autofill Extension Plugin Subsystem Integrated with Web Browser, Cloud-Based Communication Platform and USCIS or USPTO E-Filing System </a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>US Patent Office (Pending) </h4>
+
+                     <h4>2015 </h4>
+
+                </div>
+                <p>Wrote the extension code as well as drafted the original patent proposal.
+                    Inventorship transfered to Bing Yu Hsieh</p>
+            </section>
+            <section class="position">
+                	<h3 class="publication">
+		            <a target="_blank" rel="noopener" href="https://web.archive.org/web/20140323115316/http://www.lsi.umich.edu/labs/georgios-skiniotis-lab">Structure of a Modular Polyketide Synthase</a>
+					</h3>
+
+                <div class="fb">
+                    	<h4>Nature </h4>
+
+                     <h4>2013 </h4>
+
+                </div>
+                <p>Assisted on image processing for this paper which was published in Nature,
+                    the world&#x27;s highest-rated academic journal</p>
+            </section>
+        </div>
+        <a class="fixed onwards" href="/east/2">⟵ </a>
+    </body>
+
+</html>
