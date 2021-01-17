@@ -59,7 +59,7 @@ body {
   }
 
   a {
-    color: var(--blue);
+    color: var(--main);
   }
   .onwards {
     text-shadow: 2px 2px 1px white;
