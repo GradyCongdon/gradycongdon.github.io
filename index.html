@@ -1,54 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>gradycongdon.github.io</title>
-    <meta name="description" content="Grady's github page">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="canonical" href="https://gradycongdon.github.io/">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=block" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/index.css">
-    <link rel="preload" as="image" href="/images/branches.jpg">
-    <link rel="preload" as="image" href="/images/elephant.jpg">
-<style> 
-html {
-  background-color: var(--main);
-}
-a {
-  color: white;
-}
-.onwards {
-  text-shadow: none;
-}
-main {
-  min-height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -5vh;
-}
-.me {
-  margin-bottom: 3vh;
-}
-</style>
-    <script defer src="/assets/script.js"></script>
-  </head>
 
-  <body class="fadein index">
-    <div class="content">
-      <main>
-      <h1 class="me">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gradycongdon.github.io</title>
+  <meta name="description" content="Grady's github page">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://gradycongdon.github.io/">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/index.css">
+  <style>
+    html {
+      background-color: var(--main);
+    }
+
+    a {
+      color: white;
+    }
+
+    .onwards {
+      text-shadow: none;
+    }
+
+    main {
+      min-height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -5vh;
+    }
+
+    .me {
+      margin: 0 auto;
+      margin-bottom: 3vh;
+      width: fit-content;
+      text-decoration: underline;
+      /* text-shadow: 2px 1px 1px #015033; */
+      /* background-color: white; */
+      padding: .25rem 1rem;
+    }
+    .me a {
+      /* color: var(--main); */
+    }
+
+    :root {
+      --distance: 12px;
+    }
+    
+    .wiggle {
+      animation-name: wiggle;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      /* animation-direction: reverse; */
+    }
+    @media screen and (max-width: 375px) {
+      .wiggle {
+        animation: none;
+      }
+    }
+
+    @keyframes wiggle {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(calc(-1 * var(--distance)));
+      }
+      50% {
+        transform: translateX(0);
+      }
+      75% {
+        transform: translateX(var(--distance));
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <script defer src="/assets/script.js"></script>
+</head>
+
+<body class="fadein index">
+  <div class="content">
+    <main>
+<h1 class="me wiggle">
         <a href="#">grady congdon</a>
       </h1>
-      <h3 class="link--code">
+<h3 class="link--code wiggle">
         <a href="https://rebrew.club">rebrew.club</a>
         <span class="super">
           <a href="https://github.com/gradycongdon/rebrew.club">1</a>
         </span>
         <span class="desc">a tea timer</span>
       </h3>
-      <h3 class="link--code">
+<h3 class="link--code wiggle">
         <a href="https://gradycongdon.github.io/sine/">sine</a>
         <span class="super">
           <a href="https://github.com/gradycongdon/sine">2</a>
@@ -56,7 +102,7 @@ main {
         <span class="desc">a microtonal synth with webaudio</span>
       </h3>
 
-      <h3 class="link--code">
+      <h3 class="link--code wiggle">
         <a href="https://gradycongdon.github.io/freqinput/">freqinput</a>
         <span class="super">
           <a href="https://github.com/gradycongdon/freqinput">3</a>
@@ -64,7 +110,7 @@ main {
         <span class="desc"> a react app for selecting frequencies </span>
       </h3>
 
-      <h3 class="link--code">
+      <h3 class="link--code wiggle">
         <a href="https://gradycongdon.github.io/tsmb/">tsmb</a>
         <span class="super">
           <a href="https://github.com/gradycongdon/tsmb">4</a>
@@ -74,33 +120,33 @@ main {
 
 
 
-      <h2 class="link--photos">
-        <a class="onwards" href="/photos/">⟵ </a>
+      <h2 class="link--photos wiggle">
+        <a class="onwards" href="/photos/" rel="prerender">⟵ </a>
         <a href="/photos/">photos</a>
         <a class="onwards hidden" href="/photos/">⟵ </a>
       </h2>
 
 
-      <h4 class="cat-link">
+      <h4 class="cat-link wiggle">
         <a href="https://www.instagram.com/gggrrraaadddyyy/">
-         insta
+          insta
         </a>
       </h4>
 
-      <h4 class="cat-link">
+      <h4 class="cat-link wiggle">
         <a href="https://are.na/grady-congdon">
           are.na
         </a>
       </h4>
 
-      <h4><a href="https://github.com/gradycongdon">github</a></h4>
-      <h4><a href="https://bandcamp.com/gradyc">bandcamp</a></h4>
-    </div>
-      </main>
+      <h4 class="wiggle"><a href="https://github.com/gradycongdon">github</a></h4>
+      <h4 class="wiggle"><a href="https://bandcamp.com/gradyc">bandcamp</a></h4>
+  </div>
+  </main>
 
-    <a class="onwards fixed" href="/east/1/">
-      ⟶
-    </a>
-  </body>
+  <a class="onwards fixed wiggle" href="/east/1/">
+    ⟶
+  </a>
+</body>
+
 </html>
-
